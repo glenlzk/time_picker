@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div  tabindex="0" style="width:200px;height:200px;border:1px solid #000;" id="box"></div>
+		<button id="btn">focus</button>
+	</body>
+</html>
+<script>
+	
+	// ES5 环境
+	
+	var elem = document.getElementById('box')
+	var btn = document.getElementById('btn')
+
+	elem.onfocus = function () {
+		this.style.width = '300px'
+		this.style.height = '300px'
+	};
+	
+	elem.onblur = function () {
+		this.style.width = '100px'
+		this.style.height = '100px'
+	};
+
+	btn.onclick = function () {
+		elem.focus();
+	};
+
+	event.stopPropagation()
+	
+</script>
