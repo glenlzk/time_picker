@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="time-picker.css">
+    <style>
+        .outbox {
+            margin: 10px auto;
+            width: 1000px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outbox" id="demo">
+        <p>time picker</p>
+        <br>
+        <br>
+        <div>
+            <time-picker :time.sync="'12:30'"></time-picker>
+        </div>
+    </div>
+
+</body>
+</html>
+<script src="../vue.min.js"></script>
+<script src="time-picker.js"></script>
+<script type="text/javascript">
+    // 应用1
+    var multiVue = new Vue({
+        el : '#demo',
+        data: {
+
+        },
+        watch: {
+
+        },
+        components:{
+
+        },
+        methods: {
+
+        }
+    });
+
+
+</script>
